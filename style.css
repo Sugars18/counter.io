@@ -1,0 +1,173 @@
+/* Добавляем стили для страницы контр-пиков */
+.filters {
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.filter-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.filter-group label {
+    font-weight: bold;
+    color: #e91e63;
+}
+
+.filter-group select {
+    padding: 8px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: white;
+    font-size: 14px;
+}
+
+.counters-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.counter-card {
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #e91e63;
+}
+
+.hero-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.hero-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #e91e63, #ff4081);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.hero-info .hero-name {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #e91e63;
+    margin-bottom: 5px;
+}
+
+.hero-info .hero-role {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.counters-section h3 {
+    color: #e91e63;
+    margin: 15px 0 8px 0;
+    font-size: 1rem;
+}
+
+.strong-against {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.strong-hero {
+    background: #4caf50;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+}
+
+.weak-against {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.counter-item {
+    background: white;
+    padding: 12px;
+    border-radius: 8px;
+    border-left: 4px solid;
+}
+
+.counter-item.tank { border-left-color: #3498db; }
+.counter-item.mage { border-left-color: #f1c40f; }
+.counter-item.marksman { border-left-color: #2ecc71; }
+.counter-item.assassin { border-left-color: #9b59b6; }
+.counter-item.support { border-left-color: #e67e22; }
+.counter-item.item { border-left-color: #e74c3c; }
+.counter-item.battle spell { border-left-color: #1abc9c; }
+
+.counter-hero {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.counter-reason {
+    color: #666;
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+.recommended-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.item {
+    background: #2196f3;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+}
+
+.strategy {
+    background: #fff3e0;
+    padding: 12px;
+    border-radius: 8px;
+    border-left: 4px solid #ff9800;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.no-counters {
+    text-align: center;
+    color: #999;
+    font-style: italic;
+    padding: 20px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .counters-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .filter-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
